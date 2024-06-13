@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Label Titles</title>
+    <style>
+        .oxide-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .oxide-item {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+        .selected {
+            background-color: #a3d2ca;
+        }
+        .synonyms {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .progress-bar-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 13px;
+            margin-bottom: 20px;
+        }
+        .progress-bar {
+            height: 20px;
+            border-radius: 13px;
+            background-color: #4caf50;
+            width: 0%;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBar = document.getElementById('progress-bar');
+            const totalTitles = {{ total_titles }};
+            const completedTitles = {{ completed_titles }};
+            const progress = (completedTitles / totalTitles) * 100;
+            progressBar.style.width = progress.toFixed(4) + '%';
+            progressBar.textContent = progress.toFixed(4) + '%';
+        });
+
+        function toggleSelection(event) {
+            const noneButton = document.getElementById('none-button');
+            if (event.currentTarget.id === 'none-button') {
+                document.querySelectorAll('.oxide-item').forEach(button => {
+                    button.classList.remove('selected');
+                    const oxide = button.dataset.oxide;
+                    document.querySelector(`.nanoparticle-status[data-oxide="${oxide}"]`)?.remove();
+                });
+            } else {
+                noneButton.classList.remove('selected');
+            }
+
+            event.currentTarget.classList.toggle('selected');
+            const oxide = event.currentTarget.dataset.oxide;
+            if (event.currentTarget.classList.contains('selected')) {
+                const nanoparticleStatus = document.createElement('div');
+                nanoparticleStatus.classList.add('nanoparticle-status');
+                nanoparticleStatus.dataset.oxide = oxide;
+                nanoparticleStatus.innerHTML = `
+                    <label>${oxide} is nanoparticle: </label>
+                    <label><input type="radio" name="is_nanoparticle_${oxide}" value="yes" checked> Yes</label>
+                    <label><input type="radio" name="is_nanoparticle_${oxide}" value="no"> No</label>
+                `;
+                document.getElementById('nanoparticle-status-container').appendChild(nanoparticleStatus);
+            } else {
+                document.querySelector(`.nanoparticle-status[data-oxide="${oxide}"]`)?.remove();
+            }
+        }
+
+        function submitForm() {
+            const selectedOxides = document.querySelectorAll('.selected');
+            const form = document.getElementById('label-form');
+            let selected = false;
+            selectedOxides.forEach(button => {
+                if (button.id !== 'none-button') {
+                    selected = true;
+                    const inputOxide = document.createElement('input');
+                    inputOxide.type = 'hidden';
+                    inputOxide.name = 'oxide';
+                    inputOxide.value = button.dataset.oxide;
+                    form.appendChild(inputOxide);
+
+                    const isNanoparticle = document.querySelector(`input[name="is_nanoparticle_${button.dataset.oxide}"]:checked`).value;
+                    const inputNanoparticle = document.createElement('input');
+                    inputNanoparticle.type = 'hidden';
+                    inputNanoparticle.name = 'is_nanoparticle';
+                    inputNanoparticle.value = isNanoparticle;
+                    form.appendChild(inputNanoparticle);
+                }
+            });
+            if (!selected) {
+                const inputOxide = document.createElement('input');
+                inputOxide.type = 'hidden';
+                inputOxide.name = 'oxide';
+                inputOxide.value = 'None';
+                form.appendChild(inputOxide);
+
+                const inputNanoparticle = document.createElement('input');
+                inputNanoparticle.type = 'hidden';
+                inputNanoparticle.name = 'is_nanoparticle';
+                inputNanoparticle.value = 'None';
+                form.appendChild(inputNanoparticle);
+            }
+            form.submit();
+        }
+    </script>
+</head>
+<body style="max-width:1000px; margin: auto;">
+    <h1>Label Titles</h1>
+    <div class="progress-bar-container">
+        <div id="progress-bar" class="progress-bar"></div>
+    </div>
+    <h2>{{ title.title }}</h2>
+    <h3>{{ title.translated_title }}</h3>
+    <p><strong>Keywords:</strong> {{ keywords }}</p>
+    <form id="label-form" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="title_id" value="{{ title.id }}">
+
+        <div>
+            <label>Oxides:</label>
+            <div class="oxide-container">
+                <div id="none-button" class="oxide-item" data-oxide="None" onclick="toggleSelection(event)">
+                    None
+                </div>
+                {% for oxide, synonyms in oxides.items %}
+                    <div class="oxide-item" data-oxide="{{ oxide }}" onclick="toggleSelection(event)">
+                        {{ oxide }}
+                        <div class="synonyms">
+                            Synonyms: {% for synonym in synonyms %}{{ synonym }}{% if not forloop.last %}, {% endif %}{% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div id="nanoparticle-status-container"></div>
+
+        <button type="button" onclick="submitForm()">OK</button>
+    </form>
+</body>
+</html>
