@@ -1,0 +1,170 @@
+Year: 1988
+  Material: ZnO, Count: 1
+Year: 1997
+  Material: TiO2, Count: 3
+  Material: SiO2, Count: 2
+  Material: ZnO, Count: 1
+Year: 1996
+  Material: SiO2, Count: 5
+  Material: ZnO, Count: 1
+  Material: TiO2, Count: 5
+Year: 1995
+  Material: Al2O3, Count: 2
+Year: 1992
+  Material: CuO, Count: 1
+  Material: SiO2, Count: 1
+Year: 2015
+  Material: CuO, Count: 100
+  Material: SiO2, Count: 280
+  Material: TiO2, Count: 273
+  Material: Al2O3, Count: 93
+  Material: ZnO, Count: 198
+Year: 2014
+  Material: SiO2, Count: 250
+  Material: TiO2, Count: 249
+  Material: CuO, Count: 60
+  Material: Al2O3, Count: 76
+  Material: ZnO, Count: 161
+Year: 2021
+  Material: TiO2, Count: 183
+  Material: SiO2, Count: 186
+  Material: Al2O3, Count: 66
+  Material: CuO, Count: 83
+  Material: ZnO, Count: 200
+Year: 2020
+  Material: ZnO, Count: 164
+  Material: TiO2, Count: 184
+  Material: SiO2, Count: 198
+  Material: CuO, Count: 85
+  Material: Al2O3, Count: 53
+Year: 2011
+  Material: SiO2, Count: 123
+  Material: TiO2, Count: 115
+  Material: CuO, Count: 34
+  Material: ZnO, Count: 78
+  Material: Al2O3, Count: 28
+Year: 2010
+  Material: TiO2, Count: 77
+  Material: SiO2, Count: 76
+  Material: ZnO, Count: 38
+  Material: CuO, Count: 22
+  Material: Al2O3, Count: 23
+Year: 2009
+  Material: CuO, Count: 18
+  Material: TiO2, Count: 72
+  Material: Al2O3, Count: 22
+  Material: ZnO, Count: 25
+  Material: SiO2, Count: 41
+Year: 2008
+  Material: TiO2, Count: 53
+  Material: SiO2, Count: 52
+  Material: ZnO, Count: 18
+  Material: CuO, Count: 9
+  Material: Al2O3, Count: 19
+Year: 2007
+  Material: Al2O3, Count: 14
+  Material: SiO2, Count: 38
+  Material: TiO2, Count: 43
+  Material: ZnO, Count: 12
+  Material: CuO, Count: 10
+Year: 2006
+  Material: Al2O3, Count: 6
+  Material: CuO, Count: 1
+  Material: SiO2, Count: 24
+  Material: ZnO, Count: 22
+  Material: TiO2, Count: 29
+Year: 2005
+  Material: SiO2, Count: 23
+  Material: TiO2, Count: 21
+  Material: CuO, Count: 6
+  Material: Al2O3, Count: 8
+  Material: ZnO, Count: 8
+Year: 2004
+  Material: CuO, Count: 3
+  Material: SiO2, Count: 18
+  Material: TiO2, Count: 19
+  Material: ZnO, Count: 4
+  Material: Al2O3, Count: 2
+Year: 2003
+  Material: TiO2, Count: 16
+  Material: SiO2, Count: 18
+  Material: Al2O3, Count: 6
+  Material: ZnO, Count: 3
+Year: 2002
+  Material: TiO2, Count: 13
+  Material: SiO2, Count: 10
+  Material: ZnO, Count: 3
+  Material: Al2O3, Count: 4
+Year: 2001
+  Material: ZnO, Count: 1
+  Material: TiO2, Count: 7
+  Material: SiO2, Count: 5
+  Material: Al2O3, Count: 1
+  Material: CuO, Count: 1
+Year: 2000
+  Material: SiO2, Count: 5
+  Material: TiO2, Count: 6
+  Material: Al2O3, Count: 1
+Year: 1999
+  Material: TiO2, Count: 3
+  Material: Al2O3, Count: 2
+  Material: SiO2, Count: 4
+  Material: CuO, Count: 1
+Year: 1998
+  Material: SiO2, Count: 3
+  Material: Al2O3, Count: 1
+  Material: CuO, Count: 2
+Year: 2024
+  Material: ZnO, Count: 179
+  Material: SiO2, Count: 149
+  Material: TiO2, Count: 118
+  Material: CuO, Count: 83
+  Material: Al2O3, Count: 53
+Year: 2023
+  Material: TiO2, Count: 197
+  Material: CuO, Count: 109
+  Material: ZnO, Count: 234
+  Material: SiO2, Count: 237
+  Material: Al2O3, Count: 57
+Year: 2022
+  Material: TiO2, Count: 199
+  Material: CuO, Count: 108
+  Material: SiO2, Count: 240
+  Material: ZnO, Count: 218
+  Material: Al2O3, Count: 67
+Year: 2013
+  Material: ZnO, Count: 148
+  Material: SiO2, Count: 272
+  Material: TiO2, Count: 290
+  Material: Al2O3, Count: 68
+  Material: CuO, Count: 48
+Year: 2012
+  Material: SiO2, Count: 174
+  Material: ZnO, Count: 116
+  Material: TiO2, Count: 222
+  Material: CuO, Count: 44
+  Material: Al2O3, Count: 54
+Year: 2019
+  Material: SiO2, Count: 182
+  Material: ZnO, Count: 123
+  Material: Al2O3, Count: 81
+  Material: CuO, Count: 95
+  Material: TiO2, Count: 177
+Year: 2018
+  Material: TiO2, Count: 198
+  Material: SiO2, Count: 187
+  Material: Al2O3, Count: 53
+  Material: CuO, Count: 68
+  Material: ZnO, Count: 140
+Year: 2017
+  Material: CuO, Count: 72
+  Material: TiO2, Count: 166
+  Material: SiO2, Count: 187
+  Material: ZnO, Count: 125
+  Material: Al2O3, Count: 40
+Year: 2016
+  Material: Al2O3, Count: 57
+  Material: SiO2, Count: 151
+  Material: TiO2, Count: 174
+  Material: CuO, Count: 49
+  Material: ZnO, Count: 119

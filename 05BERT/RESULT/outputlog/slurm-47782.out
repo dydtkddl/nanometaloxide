@@ -1,0 +1,32 @@
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at ./repos/BERTS/bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at ./repos/BERTS/bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:28: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn("The verbose parameter is deprecated. Please use get_last_lr() "
+BERT
+MAX_LEN :  128 
+ BATCH_SIZE :  32 
+ EPOCHS :  50 
+ LR :  1e-05 
+ DATAPATH :  ./repos/OXIDE/purify_data.xlsx 
+ BERT :  ./repos/BERTS/bert-base-uncased THRESHOLD :  0.5 RANDOM_STATE :  10 TRAIN_VAL_LOG_PATH :  ./repos/OXIDE/RESULT/TRAIN_VAL_LOG/BERT TRAIN_LOSS_AVG_IMAGE_PATH :  ./repos/OXIDE/RESULT/TRAIN_LOSS_AVG_IMAGE/BERT VALIDATION_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT VALIDATION_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT VALIDATION_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT TEST_METRIC_LOG_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_LOG/BERT TEST_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT TEST_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT TEST_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_AVG/BERT MODEL_WEIGHT_PATH :  ./repos/OXIDE../MODEL_WEIGHT/BERT SSHPATH :  ./repos/OXIDE BERTNAME :  bert-base-uncased PROCESSID :  24_06_05_07_29_38_0
+  0%|          | 0/50 [00:00<?, ?it/s]
+  0%|          | 0/30 [00:00<?, ?it/s][A
+  3%|▎         | 1/30 [00:01<00:36,  1.25s/it][A
+  7%|▋         | 2/30 [00:01<00:19,  1.46it/s][A
+ 10%|█         | 3/30 [00:01<00:13,  1.97it/s][A
+ 13%|█▎        | 4/30 [00:02<00:10,  2.37it/s][A
+ 17%|█▋        | 5/30 [00:02<00:09,  2.66it/s][A
+ 20%|██        | 6/30 [00:02<00:08,  2.88it/s][A
+ 23%|██▎       | 7/30 [00:03<00:07,  3.04it/s][A
+ 27%|██▋       | 8/30 [00:03<00:06,  3.15it/s][A
+ 30%|███       | 9/30 [00:03<00:06,  3.22it/s][A
+ 33%|███▎      | 10/30 [00:03<00:06,  3.28it/s][A
+ 37%|███▋      | 11/30 [00:04<00:05,  3.33it/s][A
+ 40%|████      | 12/30 [00:04<00:05,  3.35it/s][A
+ 43%|████▎     | 13/30 [00:04<00:05,  3.37it/s][A
+ 47%|████▋     | 14/30 [00:05<00:04,  3.38it/s][A
+ 50%|█████     | 15/30 [00:05<00:04,  3.39it/s][A
+ 53%|█████▎    | 16/30 [00:05<00:04,  3.40it/s][A
+ 57%|█████▋    | 17/30 [00:05<00:03,  3.40it/s][Aslurmstepd: error: *** JOB 47782 ON moana-y3 CANCELLED AT 2024-06-05T07:29:52 ***

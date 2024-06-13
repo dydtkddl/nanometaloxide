@@ -1,0 +1,9 @@
+Year: 2012
+  Material: ZnO, Count: 2
+  Material: TiO2, Count: 3
+Year: 2011
+  Material: SiO2, Count: 35
+  Material: ZnO, Count: 25
+  Material: TiO2, Count: 31
+  Material: CuO, Count: 11
+  Material: Al2O3, Count: 8

@@ -1,0 +1,41 @@
+## 토크나이저 (하이브리드, 워드)
+
+matbert-base-uncased
+matbert-base-cased
+allenai/scibert_scivocab_uncased
+allenai/scibert_scivocab_cased
+m3rg-iitd/matscibert
+pranav-s/MaterialsBERT
+bert-base-cased
+bert-base-uncased
+
+** 베스트 토크나이저 구하기
+>> 하이브리드 / 워드 & uncased / cased 바차트
+
+
+## 하이브리드(+베스트토크나이저) & 워드(+베스트토크나이저) & 문자기반
+threshold 변화
+max_len변화
+batch사이즈 변화
+필터변화
+커널사이즈 변화
+
+** 하이브리드의 우수성 입증
+>> 전체 집계 및 평균 표준편차 그래프
+
+## 하이브리드 ( 여러 하이퍼파라미터별 분석 )
+threshold 변화
+max_len변화
+batch사이즈 변화
+필터변화
+커널사이즈 변화
+
+** 베스트 하이퍼파라미터 구하기
+>> 각 변화요소별 성능
+
+
+
+
+
+
+

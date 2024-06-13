@@ -1,0 +1,63 @@
+BERT
+MAX_LEN :  128 
+ BATCH_SIZE :  32 
+ EPOCHS :  50 
+ LR :  1e-05 
+ DATAPATH :  ./repos/OXIDE/purify_data.xlsx 
+ BERT :  ./repos/scibert_scivocab_cased THRESHOLD :  0.5 RANDOM_STATE :  42 TRAIN_VAL_LOG_PATH :  ./repos/OXIDE/RESULT/TRAIN_VAL_LOG/BERT TRAIN_LOSS_AVG_IMAGE_PATH :  ./repos/OXIDE/RESULT/TRAIN_LOSS_AVG_IMAGE/BERT VALIDATION_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT VALIDATION_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT VALIDATION_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT TEST_METRIC_LOG_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_LOG/BERT TEST_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT TEST_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT TEST_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_AVG/BERT MODEL_WEIGHT_PATH :  ./repos/OXIDE/RESULT/MODEL_WEIGHT/BERT SSHPATH :  ./repos/OXIDE
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/utils/hub.py", line 399, in cached_file
+    resolved_file = hf_hub_download(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': './repos/scibert_scivocab_cased'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./repos/OXIDE/train.py", line 465, in <module>
+    main(args)
+  File "./repos/OXIDE/train.py", line 125, in main
+    tokenizer = BertTokenizerFast.from_pretrained(BERT)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 2029, in from_pretrained
+    resolved_config_file = cached_file(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/utils/hub.py", line 463, in cached_file
+    raise EnvironmentError(
+OSError: Incorrect path_or_model_id: './repos/scibert_scivocab_cased'. Please provide either the path to a local folder or the repo_id of a model on the Hub.
+BERT
+MAX_LEN :  128 
+ BATCH_SIZE :  32 
+ EPOCHS :  50 
+ LR :  1e-05 
+ DATAPATH :  ./repos/OXIDE/purify_data.xlsx 
+ BERT :  ./repos/scibert_scivocab_cased THRESHOLD :  0.5 RANDOM_STATE :  42 TRAIN_VAL_LOG_PATH :  ./repos/OXIDE/RESULT/TRAIN_VAL_LOG/BERT TRAIN_LOSS_AVG_IMAGE_PATH :  ./repos/OXIDE/RESULT/TRAIN_LOSS_AVG_IMAGE/BERT VALIDATION_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT VALIDATION_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT VALIDATION_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT TEST_METRIC_LOG_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_LOG/BERT TEST_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT TEST_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT TEST_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_AVG/BERT MODEL_WEIGHT_PATH :  ./repos/OXIDE/RESULT/MODEL_WEIGHT/BERT SSHPATH :  ./repos/OXIDE
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/utils/hub.py", line 399, in cached_file
+    resolved_file = hf_hub_download(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': './repos/scibert_scivocab_cased'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./repos/OXIDE/train.py", line 465, in <module>
+    main(args)
+  File "./repos/OXIDE/train.py", line 125, in main
+    tokenizer = BertTokenizerFast.from_pretrained(BERT)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 2029, in from_pretrained
+    resolved_config_file = cached_file(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/utils/hub.py", line 463, in cached_file
+    raise EnvironmentError(
+OSError: Incorrect path_or_model_id: './repos/scibert_scivocab_cased'. Please provide either the path to a local folder or the repo_id of a model on the Hub.
+/data/dydtkddhkdwk
+python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05
+Command failed: python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05
+python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05
+Command failed: python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05
+failed command: ['python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05', 'python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05']
+failed command: ['python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05', 'python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05']

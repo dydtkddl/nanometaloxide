@@ -1,0 +1,237 @@
+Matplotlib created a temporary cache directory at /data/dydtkddhkdwk/matplotlib-z6m8h7g1 because the default path (/home/dydtkddhkdwk/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at ./repos/OXIDE/scibert_scivocab_cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at ./repos/OXIDE/scibert_scivocab_cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:28: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn("The verbose parameter is deprecated. Please use get_last_lr() "
+BERT
+MAX_LEN :  128 
+ BATCH_SIZE :  32 
+ EPOCHS :  5 
+ LR :  0.001 
+ DATAPATH :  ./repos/OXIDE/purify_data.xlsx 
+ BERT :  ./repos/OXIDE/scibert_scivocab_cased THRESHOLD :  0.5 RANDOM_STATE :  42 TRAIN_VAL_LOG_PATH :  ./repos/OXIDE/TRAIN_VAL_LOG/BERT TRAIN_LOSS_AVG_IMAGE_PATH :  ./repos/OXIDE/TRAIN_LOSS_AVG_IMAGE/BERT VALIDATION_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT VALIDATION_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT VALIDATION_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/VALIDATION_METRIC_IMAGE_AVG/BERT TEST_METRIC_LOG_PATH :  ./repos/OXIDE/TEST_METRIC_LOG/BERT TEST_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/TEST_METRIC_IMAGE_NANOPARTICLE/BERT TEST_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT TEST_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/TEST_METRIC_IMAGE_AVG/BERT MODEL_WEIGHT_PATH :  ./repos/OXIDE/MODEL_WEIGHT/BERT SSHPATH :  ./repos/OXIDE
+  0%|          | 0/5 [00:00<?, ?it/s]
+  0%|          | 0/30 [00:00<?, ?it/s][A
+  3%|▎         | 1/30 [00:01<00:39,  1.35s/it][A
+  7%|▋         | 2/30 [00:01<00:20,  1.36it/s][A
+ 10%|█         | 3/30 [00:01<00:14,  1.87it/s][A
+ 13%|█▎        | 4/30 [00:02<00:11,  2.26it/s][A
+ 17%|█▋        | 5/30 [00:02<00:09,  2.56it/s][A
+ 20%|██        | 6/30 [00:02<00:08,  2.77it/s][A
+ 23%|██▎       | 7/30 [00:03<00:07,  2.93it/s][A
+ 27%|██▋       | 8/30 [00:03<00:07,  3.04it/s][A
+ 30%|███       | 9/30 [00:03<00:06,  3.13it/s][A
+ 33%|███▎      | 10/30 [00:04<00:06,  3.18it/s][A
+ 37%|███▋      | 11/30 [00:04<00:05,  3.23it/s][A
+ 40%|████      | 12/30 [00:04<00:05,  3.26it/s][A
+ 43%|████▎     | 13/30 [00:04<00:05,  3.28it/s][A
+ 47%|████▋     | 14/30 [00:05<00:04,  3.29it/s][A
+ 50%|█████     | 15/30 [00:05<00:04,  3.30it/s][A
+ 53%|█████▎    | 16/30 [00:05<00:04,  3.31it/s][A
+ 57%|█████▋    | 17/30 [00:06<00:03,  3.31it/s][A
+ 60%|██████    | 18/30 [00:06<00:03,  3.32it/s][A
+ 63%|██████▎   | 19/30 [00:06<00:03,  3.32it/s][A
+ 67%|██████▋   | 20/30 [00:07<00:03,  3.33it/s][A
+ 70%|███████   | 21/30 [00:07<00:02,  3.33it/s][A
+ 73%|███████▎  | 22/30 [00:07<00:02,  3.33it/s][A
+ 77%|███████▋  | 23/30 [00:07<00:02,  3.33it/s][A
+ 80%|████████  | 24/30 [00:08<00:01,  3.32it/s][A
+ 83%|████████▎ | 25/30 [00:08<00:01,  3.32it/s][A
+ 87%|████████▋ | 26/30 [00:08<00:01,  3.32it/s][A
+ 90%|█████████ | 27/30 [00:09<00:00,  3.32it/s][A
+ 93%|█████████▎| 28/30 [00:09<00:00,  3.32it/s][A
+ 97%|█████████▋| 29/30 [00:09<00:00,  3.32it/s][A
+100%|██████████| 30/30 [00:09<00:00,  3.68it/s][A100%|██████████| 30/30 [00:09<00:00,  3.01it/s]
+ 20%|██        | 1/5 [00:12<00:51, 12.86s/it]Epoch 1/5, Train Loss: 0.7976877053578695
+Validation Loss: 0.737490251660347
+Validation loss decreased (inf --> 0.737490).  Saving model ...
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+  3%|▎         | 1/30 [00:00<00:08,  3.30it/s][A
+  7%|▋         | 2/30 [00:00<00:08,  3.31it/s][A
+ 10%|█         | 3/30 [00:00<00:08,  3.31it/s][A
+ 13%|█▎        | 4/30 [00:01<00:07,  3.31it/s][A
+ 17%|█▋        | 5/30 [00:01<00:07,  3.31it/s][A
+ 20%|██        | 6/30 [00:01<00:07,  3.32it/s][A
+ 23%|██▎       | 7/30 [00:02<00:06,  3.32it/s][A
+ 27%|██▋       | 8/30 [00:02<00:06,  3.32it/s][A
+ 30%|███       | 9/30 [00:02<00:06,  3.31it/s][A
+ 33%|███▎      | 10/30 [00:03<00:06,  3.31it/s][A
+ 37%|███▋      | 11/30 [00:03<00:05,  3.31it/s][A
+ 40%|████      | 12/30 [00:03<00:05,  3.31it/s][A
+ 43%|████▎     | 13/30 [00:03<00:05,  3.31it/s][A
+ 47%|████▋     | 14/30 [00:04<00:04,  3.31it/s][A
+ 50%|█████     | 15/30 [00:04<00:04,  3.31it/s][A
+ 53%|█████▎    | 16/30 [00:04<00:04,  3.31it/s][A
+ 57%|█████▋    | 17/30 [00:05<00:03,  3.31it/s][A
+ 60%|██████    | 18/30 [00:05<00:03,  3.31it/s][A
+ 63%|██████▎   | 19/30 [00:05<00:03,  3.31it/s][A
+ 67%|██████▋   | 20/30 [00:06<00:03,  3.31it/s][A
+ 70%|███████   | 21/30 [00:06<00:02,  3.31it/s][A
+ 73%|███████▎  | 22/30 [00:06<00:02,  3.31it/s][A
+ 77%|███████▋  | 23/30 [00:06<00:02,  3.31it/s][A
+ 80%|████████  | 24/30 [00:07<00:01,  3.31it/s][A
+ 83%|████████▎ | 25/30 [00:07<00:01,  3.30it/s][A
+ 87%|████████▋ | 26/30 [00:07<00:01,  3.30it/s][A
+ 90%|█████████ | 27/30 [00:08<00:00,  3.30it/s][A
+ 93%|█████████▎| 28/30 [00:08<00:00,  3.30it/s][A
+ 97%|█████████▋| 29/30 [00:08<00:00,  3.30it/s][A
+100%|██████████| 30/30 [00:08<00:00,  3.68it/s][A100%|██████████| 30/30 [00:08<00:00,  3.35it/s]
+ 40%|████      | 2/5 [00:22<00:32, 10.81s/it]Epoch 2/5, Train Loss: 0.7270826498667399
+Validation Loss: 0.7444069981575012
+EarlyStopping counter: 1 out of 5
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+  3%|▎         | 1/30 [00:00<00:08,  3.31it/s][A
+  7%|▋         | 2/30 [00:00<00:08,  3.31it/s][A
+ 10%|█         | 3/30 [00:00<00:08,  3.31it/s][A
+ 13%|█▎        | 4/30 [00:01<00:07,  3.31it/s][A
+ 17%|█▋        | 5/30 [00:01<00:07,  3.31it/s][A
+ 20%|██        | 6/30 [00:01<00:07,  3.30it/s][A
+ 23%|██▎       | 7/30 [00:02<00:06,  3.30it/s][A
+ 27%|██▋       | 8/30 [00:02<00:06,  3.30it/s][A
+ 30%|███       | 9/30 [00:02<00:06,  3.30it/s][A
+ 33%|███▎      | 10/30 [00:03<00:06,  3.31it/s][A
+ 37%|███▋      | 11/30 [00:03<00:05,  3.30it/s][A
+ 40%|████      | 12/30 [00:03<00:05,  3.30it/s][A
+ 43%|████▎     | 13/30 [00:03<00:05,  3.30it/s][A
+ 47%|████▋     | 14/30 [00:04<00:04,  3.30it/s][A
+ 50%|█████     | 15/30 [00:04<00:04,  3.30it/s][A
+ 53%|█████▎    | 16/30 [00:04<00:04,  3.30it/s][A
+ 57%|█████▋    | 17/30 [00:05<00:03,  3.29it/s][A
+ 60%|██████    | 18/30 [00:05<00:03,  3.29it/s][A
+ 63%|██████▎   | 19/30 [00:05<00:03,  3.29it/s][A
+ 67%|██████▋   | 20/30 [00:06<00:03,  3.30it/s][A
+ 70%|███████   | 21/30 [00:06<00:02,  3.30it/s][A
+ 73%|███████▎  | 22/30 [00:06<00:02,  3.30it/s][A
+ 77%|███████▋  | 23/30 [00:06<00:02,  3.30it/s][A
+ 80%|████████  | 24/30 [00:07<00:01,  3.29it/s][A
+ 83%|████████▎ | 25/30 [00:07<00:01,  3.29it/s][A
+ 87%|████████▋ | 26/30 [00:07<00:01,  3.30it/s][A
+ 90%|█████████ | 27/30 [00:08<00:00,  3.31it/s][A
+ 93%|█████████▎| 28/30 [00:08<00:00,  3.31it/s][A
+ 97%|█████████▋| 29/30 [00:08<00:00,  3.32it/s][A
+100%|██████████| 30/30 [00:08<00:00,  3.69it/s][A100%|██████████| 30/30 [00:08<00:00,  3.34it/s]
+ 60%|██████    | 3/5 [00:34<00:22, 11.27s/it]Epoch 3/5, Train Loss: 0.7229095578193665
+Validation Loss: 0.7343942373991013
+Validation loss decreased (0.737490 --> 0.734394).  Saving model ...
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+  3%|▎         | 1/30 [00:00<00:08,  3.28it/s][A
+  7%|▋         | 2/30 [00:00<00:08,  3.30it/s][A
+ 10%|█         | 3/30 [00:00<00:08,  3.31it/s][A
+ 13%|█▎        | 4/30 [00:01<00:07,  3.31it/s][A
+ 17%|█▋        | 5/30 [00:01<00:07,  3.32it/s][A
+ 20%|██        | 6/30 [00:01<00:07,  3.32it/s][A
+ 23%|██▎       | 7/30 [00:02<00:06,  3.32it/s][A
+ 27%|██▋       | 8/30 [00:02<00:06,  3.33it/s][A
+ 30%|███       | 9/30 [00:02<00:06,  3.32it/s][A
+ 33%|███▎      | 10/30 [00:03<00:06,  3.32it/s][A
+ 37%|███▋      | 11/30 [00:03<00:05,  3.32it/s][A
+ 40%|████      | 12/30 [00:03<00:05,  3.32it/s][A
+ 43%|████▎     | 13/30 [00:03<00:05,  3.32it/s][A
+ 47%|████▋     | 14/30 [00:04<00:04,  3.32it/s][A
+ 50%|█████     | 15/30 [00:04<00:04,  3.32it/s][A
+ 53%|█████▎    | 16/30 [00:04<00:04,  3.32it/s][A
+ 57%|█████▋    | 17/30 [00:05<00:03,  3.32it/s][A
+ 60%|██████    | 18/30 [00:05<00:03,  3.32it/s][A
+ 63%|██████▎   | 19/30 [00:05<00:03,  3.32it/s][A
+ 67%|██████▋   | 20/30 [00:06<00:03,  3.33it/s][A
+ 70%|███████   | 21/30 [00:06<00:02,  3.33it/s][A
+ 73%|███████▎  | 22/30 [00:06<00:02,  3.33it/s][A
+ 77%|███████▋  | 23/30 [00:06<00:02,  3.32it/s][A
+ 80%|████████  | 24/30 [00:07<00:01,  3.32it/s][A
+ 83%|████████▎ | 25/30 [00:07<00:01,  3.33it/s][A
+ 87%|████████▋ | 26/30 [00:07<00:01,  3.32it/s][A
+ 90%|█████████ | 27/30 [00:08<00:00,  3.32it/s][A
+ 93%|█████████▎| 28/30 [00:08<00:00,  3.32it/s][A
+ 97%|█████████▋| 29/30 [00:08<00:00,  3.32it/s][A
+100%|██████████| 30/30 [00:08<00:00,  3.69it/s][A100%|██████████| 30/30 [00:08<00:00,  3.36it/s]
+ 80%|████████  | 4/5 [00:46<00:11, 11.61s/it]Epoch 4/5, Train Loss: 0.7244583467642466
+Validation Loss: 0.7297001034021378
+Validation loss decreased (0.734394 --> 0.729700).  Saving model ...
+
+  0%|          | 0/30 [00:00<?, ?it/s][A
+  3%|▎         | 1/30 [00:00<00:08,  3.28it/s][A
+  7%|▋         | 2/30 [00:00<00:08,  3.30it/s][A
+ 10%|█         | 3/30 [00:00<00:08,  3.31it/s][A
+ 13%|█▎        | 4/30 [00:01<00:07,  3.31it/s][A
+ 17%|█▋        | 5/30 [00:01<00:07,  3.31it/s][A
+ 20%|██        | 6/30 [00:01<00:07,  3.32it/s][A
+ 23%|██▎       | 7/30 [00:02<00:06,  3.32it/s][A
+ 27%|██▋       | 8/30 [00:02<00:06,  3.32it/s][A
+ 30%|███       | 9/30 [00:02<00:06,  3.32it/s][A
+ 33%|███▎      | 10/30 [00:03<00:06,  3.32it/s][A
+ 37%|███▋      | 11/30 [00:03<00:05,  3.31it/s][A
+ 40%|████      | 12/30 [00:03<00:05,  3.31it/s][A
+ 43%|████▎     | 13/30 [00:03<00:05,  3.32it/s][A
+ 47%|████▋     | 14/30 [00:04<00:04,  3.32it/s][A
+ 50%|█████     | 15/30 [00:04<00:04,  3.31it/s][A
+ 53%|█████▎    | 16/30 [00:04<00:04,  3.31it/s][A
+ 57%|█████▋    | 17/30 [00:05<00:03,  3.31it/s][A
+ 60%|██████    | 18/30 [00:05<00:03,  3.31it/s][A
+ 63%|██████▎   | 19/30 [00:05<00:03,  3.32it/s][A
+ 67%|██████▋   | 20/30 [00:06<00:03,  3.32it/s][A
+ 70%|███████   | 21/30 [00:06<00:02,  3.32it/s][A
+ 73%|███████▎  | 22/30 [00:06<00:02,  3.32it/s][A
+ 77%|███████▋  | 23/30 [00:06<00:02,  3.32it/s][A
+ 80%|████████  | 24/30 [00:07<00:01,  3.32it/s][A
+ 83%|████████▎ | 25/30 [00:07<00:01,  3.31it/s][A
+ 87%|████████▋ | 26/30 [00:07<00:01,  3.31it/s][A
+ 90%|█████████ | 27/30 [00:08<00:00,  3.31it/s][A
+ 93%|█████████▎| 28/30 [00:08<00:00,  3.31it/s][A
+ 97%|█████████▋| 29/30 [00:08<00:00,  3.31it/s][A
+100%|██████████| 30/30 [00:08<00:00,  3.68it/s][A100%|██████████| 30/30 [00:08<00:00,  3.35it/s]
+100%|██████████| 5/5 [00:57<00:00, 11.68s/it]100%|██████████| 5/5 [00:57<00:00, 11.59s/it]
+Epoch 5/5, Train Loss: 0.7214054584503173
+Validation Loss: 0.7225131094455719
+Validation loss decreased (0.729700 --> 0.722513).  Saving model ...
+Test Precision (Nanoparticle): 0.0
+Test Recall (Nanoparticle): 0.0
+Test F1 Score (Nanoparticle): 0.0
+Test Accuracy (Nanoparticle): 0.4957983193277311
+Test Precision (Main Subject): 0.0
+Test Recall (Main Subject): 0.0
+Test F1 Score (Main Subject): 0.0
+Test Accuracy (Main Subject): 0.0
+Test Precision (AVG): 0.0
+Test Recall (AVG): 0.0
+Test F1 Score (AVG): 0.0
+Test Accuracy (AVG): 0.24789915966386555
+Model saved!
+Matplotlib created a temporary cache directory at /data/dydtkddhkdwk/matplotlib-lqxwf2ja because the default path (/home/dydtkddhkdwk/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+BERT
+MAX_LEN :  128 
+ BATCH_SIZE :  32 
+ EPOCHS :  5 
+ LR :  0.001 
+ DATAPATH :  ./repos/OXIDE/purify_data.xlsx 
+ BERT :  ./repos/OXIDE/scibert_scivocab_uncased THRESHOLD :  0.5 RANDOM_STATE :  42 TRAIN_VAL_LOG_PATH :  ./repos/OXIDE/TRAIN_VAL_LOG/BERT TRAIN_LOSS_AVG_IMAGE_PATH :  ./repos/OXIDE/TRAIN_LOSS_AVG_IMAGE/BERT VALIDATION_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT VALIDATION_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT VALIDATION_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/VALIDATION_METRIC_IMAGE_AVG/BERT TEST_METRIC_LOG_PATH :  ./repos/OXIDE/TEST_METRIC_LOG/BERT TEST_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/TEST_METRIC_IMAGE_NANOPARTICLE/BERT TEST_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT TEST_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/TEST_METRIC_IMAGE_AVG/BERT MODEL_WEIGHT_PATH :  ./repos/OXIDE/MODEL_WEIGHT/BERT SSHPATH :  ./repos/OXIDE
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/utils/hub.py", line 399, in cached_file
+    resolved_file = hf_hub_download(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': './repos/OXIDE/scibert_scivocab_uncased'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./repos/OXIDE/train.py", line 465, in <module>
+    main(args)
+  File "./repos/OXIDE/train.py", line 125, in main
+    tokenizer = BertTokenizerFast.from_pretrained(BERT)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 2029, in from_pretrained
+    resolved_config_file = cached_file(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/utils/hub.py", line 463, in cached_file
+    raise EnvironmentError(
+OSError: Incorrect path_or_model_id: './repos/OXIDE/scibert_scivocab_uncased'. Please provide either the path to a local folder or the repo_id of a model on the Hub.
+/data/dydtkddhkdwk
+python ./repos/OXIDE/train.py --train_val_log_path /TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /MODEL_WEIGHT/BERT --threshold 0.5 --epochs 5 --bert ./repos/OXIDE/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE
+python ./repos/OXIDE/train.py --train_val_log_path /TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /MODEL_WEIGHT/BERT --threshold 0.5 --epochs 5 --bert ./repos/OXIDE/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE
+Command failed: python ./repos/OXIDE/train.py --train_val_log_path /TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /MODEL_WEIGHT/BERT --threshold 0.5 --epochs 5 --bert ./repos/OXIDE/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE
+failed command: ['python ./repos/OXIDE/train.py --train_val_log_path /TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /MODEL_WEIGHT/BERT --threshold 0.5 --epochs 5 --bert ./repos/OXIDE/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE']

@@ -1,0 +1,12 @@
+Test Precision (Nanoparticle): 0.7211446360153256
+Test Recall (Nanoparticle): 0.8055555555555555
+Test F1 Score (Nanoparticle): 0.7557652920556146
+Test Accuracy (Nanoparticle): 0.9327731092436975
+Test Precision (Main Subject): 0.8156814449917899
+Test Recall (Main Subject): 0.8333333333333334
+Test F1 Score (Main Subject): 0.8242365172189734
+Test Accuracy (Main Subject): 0.9831932773109243
+Test Precision (Combined): 0.7693452380952381
+Test Recall (Combined): 0.8055555555555555
+Test F1 Score (Combined): 0.7819973932877159
+Test Accuracy (Combined): 0.957983193277311

@@ -1,0 +1,157 @@
+/RESULT/TRAIN_VAL_LOG/BERT_0607_each
+Traceback (most recent call last):
+  File "./repos/OXIDE/train_each.py", line 486, in <module>
+    main(args)
+  File "./repos/OXIDE/train_each.py", line 100, in main
+    os.makedirs(path, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/RESULT'
+/RESULT/TRAIN_VAL_LOG/BERT_0607_each
+Traceback (most recent call last):
+  File "./repos/OXIDE/train_each.py", line 486, in <module>
+    main(args)
+  File "./repos/OXIDE/train_each.py", line 100, in main
+    os.makedirs(path, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/RESULT'
+/RESULT/TRAIN_VAL_LOG/BERT_0607_each
+Traceback (most recent call last):
+  File "./repos/OXIDE/train_each.py", line 486, in <module>
+    main(args)
+  File "./repos/OXIDE/train_each.py", line 100, in main
+    os.makedirs(path, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/RESULT'
+/RESULT/TRAIN_VAL_LOG/BERT_0607_each
+Traceback (most recent call last):
+  File "./repos/OXIDE/train_each.py", line 486, in <module>
+    main(args)
+  File "./repos/OXIDE/train_each.py", line 100, in main
+    os.makedirs(path, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/RESULT'
+/RESULT/TRAIN_VAL_LOG/BERT_0607_each
+Traceback (most recent call last):
+  File "./repos/OXIDE/train_each.py", line 486, in <module>
+    main(args)
+  File "./repos/OXIDE/train_each.py", line 100, in main
+    os.makedirs(path, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/RESULT'
+/RESULT/TRAIN_VAL_LOG/BERT_0607_each
+Traceback (most recent call last):
+  File "./repos/OXIDE/train_each.py", line 486, in <module>
+    main(args)
+  File "./repos/OXIDE/train_each.py", line 100, in main
+    os.makedirs(path, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/RESULT'
+/RESULT/TRAIN_VAL_LOG/BERT_0607_each
+Traceback (most recent call last):
+  File "./repos/OXIDE/train_each.py", line 486, in <module>
+    main(args)
+  File "./repos/OXIDE/train_each.py", line 100, in main
+    os.makedirs(path, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/RESULT'
+/RESULT/TRAIN_VAL_LOG/BERT_0607_each
+Traceback (most recent call last):
+  File "./repos/OXIDE/train_each.py", line 486, in <module>
+    main(args)
+  File "./repos/OXIDE/train_each.py", line 100, in main
+    os.makedirs(path, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/RESULT'
+/RESULT/TRAIN_VAL_LOG/BERT_0607_each
+Traceback (most recent call last):
+  File "./repos/OXIDE/train_each.py", line 486, in <module>
+    main(args)
+  File "./repos/OXIDE/train_each.py", line 100, in main
+    os.makedirs(path, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/RESULT'
+/RESULT/TRAIN_VAL_LOG/BERT_0607_each
+Traceback (most recent call last):
+  File "./repos/OXIDE/train_each.py", line 486, in <module>
+    main(args)
+  File "./repos/OXIDE/train_each.py", line 100, in main
+    os.makedirs(path, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/RESULT'
+/RESULT/TRAIN_VAL_LOG/BERT_0607_each
+Traceback (most recent call last):
+  File "./repos/OXIDE/train_each.py", line 486, in <module>
+    main(args)
+  File "./repos/OXIDE/train_each.py", line 100, in main
+    os.makedirs(path, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/RESULT'
+/RESULT/TRAIN_VAL_LOG/BERT_0607_each
+Traceback (most recent call last):
+  File "./repos/OXIDE/train_each.py", line 486, in <module>
+    main(args)
+  File "./repos/OXIDE/train_each.py", line 100, in main
+    os.makedirs(path, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/RESULT'
+slurmstepd: error: *** JOB 47956 ON moana-y5 CANCELLED AT 2024-06-07T07:12:07 ***

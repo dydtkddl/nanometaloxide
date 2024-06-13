@@ -1,0 +1,121 @@
+BERT
+MAX_LEN :  128 
+ BATCH_SIZE :  32 
+ EPOCHS :  50 
+ LR :  1e-05 
+ DATAPATH :  ./repos/OXIDE/purify_data.xlsx 
+ BERT :  ./repos/OXIDE/scibert_scivocab_cased THRESHOLD :  0.5 RANDOM_STATE :  42 TRAIN_VAL_LOG_PATH :  ./repos/OXIDE/RESULT/TRAIN_VAL_LOG/BERT TRAIN_LOSS_AVG_IMAGE_PATH :  ./repos/OXIDE/RESULT/TRAIN_LOSS_AVG_IMAGE/BERT VALIDATION_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT VALIDATION_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT VALIDATION_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT TEST_METRIC_LOG_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_LOG/BERT TEST_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT TEST_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT TEST_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_AVG/BERT MODEL_WEIGHT_PATH :  ./repos/OXIDE/RESULT/MODEL_WEIGHT/BERT SSHPATH :  ./repos/OXIDE
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/modeling_utils.py", line 534, in load_state_dict
+    return torch.load(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/serialization.py", line 1039, in load
+    raise pickle.UnpicklingError(UNSAFE_MESSAGE + str(e)) from None
+_pickle.UnpicklingError: Weights only load failed. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution.Do it only if you get the file from a trusted source. WeightsUnpickler error: unexpected EOF, expected 7431030 more bytes. The file might be corrupted.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/modeling_utils.py", line 543, in load_state_dict
+    if f.read(7) == "version":
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./repos/OXIDE/train.py", line 465, in <module>
+    main(args)
+  File "./repos/OXIDE/train.py", line 148, in main
+    model = BERTTextClassifier(num_nanoparticle_classes, num_subject_classes, BERT)
+  File "./repos/OXIDE/train.py", line 22, in __init__
+    self.bert_nanoparticle = BertForSequenceClassification.from_pretrained(bert_model_name, num_labels=nanoparticle_classes)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/modeling_utils.py", line 3556, in from_pretrained
+    state_dict = load_state_dict(resolved_archive_file)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/modeling_utils.py", line 555, in load_state_dict
+    raise OSError(
+OSError: Unable to load weights from pytorch checkpoint file for './repos/OXIDE/scibert_scivocab_cased/pytorch_model.bin' at './repos/OXIDE/scibert_scivocab_cased/pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+BERT
+MAX_LEN :  128 
+ BATCH_SIZE :  32 
+ EPOCHS :  50 
+ LR :  1e-05 
+ DATAPATH :  ./repos/OXIDE/purify_data.xlsx 
+ BERT :  ./repos/OXIDE/scibert_scivocab_uncased THRESHOLD :  0.5 RANDOM_STATE :  42 TRAIN_VAL_LOG_PATH :  ./repos/OXIDE/RESULT/TRAIN_VAL_LOG/BERT TRAIN_LOSS_AVG_IMAGE_PATH :  ./repos/OXIDE/RESULT/TRAIN_LOSS_AVG_IMAGE/BERT VALIDATION_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT VALIDATION_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT VALIDATION_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT TEST_METRIC_LOG_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_LOG/BERT TEST_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT TEST_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT TEST_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_AVG/BERT MODEL_WEIGHT_PATH :  ./repos/OXIDE/RESULT/MODEL_WEIGHT/BERT SSHPATH :  ./repos/OXIDE
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/modeling_utils.py", line 534, in load_state_dict
+    return torch.load(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/serialization.py", line 1039, in load
+    raise pickle.UnpicklingError(UNSAFE_MESSAGE + str(e)) from None
+_pickle.UnpicklingError: Weights only load failed. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution.Do it only if you get the file from a trusted source. WeightsUnpickler error: unexpected EOF, expected 811846 more bytes. The file might be corrupted.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/modeling_utils.py", line 543, in load_state_dict
+    if f.read(7) == "version":
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./repos/OXIDE/train.py", line 465, in <module>
+    main(args)
+  File "./repos/OXIDE/train.py", line 148, in main
+    model = BERTTextClassifier(num_nanoparticle_classes, num_subject_classes, BERT)
+  File "./repos/OXIDE/train.py", line 22, in __init__
+    self.bert_nanoparticle = BertForSequenceClassification.from_pretrained(bert_model_name, num_labels=nanoparticle_classes)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/modeling_utils.py", line 3556, in from_pretrained
+    state_dict = load_state_dict(resolved_archive_file)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/modeling_utils.py", line 555, in load_state_dict
+    raise OSError(
+OSError: Unable to load weights from pytorch checkpoint file for './repos/OXIDE/scibert_scivocab_uncased/pytorch_model.bin' at './repos/OXIDE/scibert_scivocab_uncased/pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+BERT
+MAX_LEN :  128 
+ BATCH_SIZE :  32 
+ EPOCHS :  50 
+ LR :  1e-05 
+ DATAPATH :  ./repos/OXIDE/purify_data.xlsx 
+ BERT :  ./repos/OXIDE/scibert_scivocab_uncased THRESHOLD :  0.5 RANDOM_STATE :  42 TRAIN_VAL_LOG_PATH :  ./repos/OXIDE/RESULT/TRAIN_VAL_LOG/BERT TRAIN_LOSS_AVG_IMAGE_PATH :  ./repos/OXIDE/RESULT/TRAIN_LOSS_AVG_IMAGE/BERT VALIDATION_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT VALIDATION_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT VALIDATION_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT TEST_METRIC_LOG_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_LOG/BERT TEST_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT TEST_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT TEST_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/RESULT/TEST_METRIC_IMAGE_AVG/BERT MODEL_WEIGHT_PATH :  ./repos/OXIDE/RESULT/MODEL_WEIGHT/BERT SSHPATH :  ./repos/OXIDE
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/modeling_utils.py", line 534, in load_state_dict
+    return torch.load(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/serialization.py", line 1039, in load
+    raise pickle.UnpicklingError(UNSAFE_MESSAGE + str(e)) from None
+_pickle.UnpicklingError: Weights only load failed. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution.Do it only if you get the file from a trusted source. WeightsUnpickler error: unexpected EOF, expected 811846 more bytes. The file might be corrupted.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/modeling_utils.py", line 543, in load_state_dict
+    if f.read(7) == "version":
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./repos/OXIDE/train.py", line 465, in <module>
+    main(args)
+  File "./repos/OXIDE/train.py", line 148, in main
+    model = BERTTextClassifier(num_nanoparticle_classes, num_subject_classes, BERT)
+  File "./repos/OXIDE/train.py", line 22, in __init__
+    self.bert_nanoparticle = BertForSequenceClassification.from_pretrained(bert_model_name, num_labels=nanoparticle_classes)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/modeling_utils.py", line 3556, in from_pretrained
+    state_dict = load_state_dict(resolved_archive_file)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/modeling_utils.py", line 555, in load_state_dict
+    raise OSError(
+OSError: Unable to load weights from pytorch checkpoint file for './repos/OXIDE/scibert_scivocab_uncased/pytorch_model.bin' at './repos/OXIDE/scibert_scivocab_uncased/pytorch_model.bin'. If you tried to load a PyTorch model from a TF 2.0 checkpoint, please set from_tf=True.
+/data/dydtkddhkdwk
+python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05
+Command failed: python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05
+python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05
+Command failed: python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05
+python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05
+Command failed: python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05
+failed command: ['python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05', 'python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05', 'python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05']
+failed command: ['python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05', 'python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05', 'python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05']
+failed command: ['python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05', 'python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05', 'python ./repos/OXIDE/train.py --train_val_log_path /RESULT/TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /RESULT/TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /RESULT/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /RESULT/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /RESULT/VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /RESULT/TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /RESULT/TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /RESULT/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /RESULT/TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /RESULT/MODEL_WEIGHT/BERT --threshold 0.5 --epochs 50 --bert ./repos/OXIDE/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE --lr 1e-05']

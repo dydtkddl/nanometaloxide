@@ -1,0 +1,14 @@
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at ./repos/BERTS/matscibert and are newly initialized: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at ./repos/BERTS/matscibert and are newly initialized: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "repos/OXIDE/load_predict.py", line 42, in <module>
+    model.load_state_dict(torch.load(model_path, map_location=device))
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/serialization.py", line 997, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/serialization.py", line 444, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/serialization.py", line 425, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: './repos/MODEL_WEIGHT/[BERT]BERTNAMEmatscibert_processID24_06_07_12_32_27_7_Random_State48_lr2e-05_epoch24_threshold0.5_MAX_LEN128.pth'

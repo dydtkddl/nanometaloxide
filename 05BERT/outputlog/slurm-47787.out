@@ -1,0 +1,40 @@
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at ./repos/BERTS/matscibert and are newly initialized: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at ./repos/BERTS/matscibert and are newly initialized: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "repos/OXIDE/load_predict.py", line 60, in <module>
+    is_nanoparticle_logits, main_subject_logits = model(inputs['input_ids'], inputs['attention_mask'])
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/dydtkddhkdwk/repos/OXIDE/train.py", line 26, in forward
+    outputs_is_nanoparticle = self.bert_nanoparticle(input_ids=input_ids, attention_mask=attention_mask)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 1691, in forward
+    outputs = self.bert(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 1073, in forward
+    embedding_output = self.embeddings(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 210, in forward
+    inputs_embeds = self.word_embeddings(input_ids)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/nn/modules/sparse.py", line 163, in forward
+    return F.embedding(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/torch/nn/functional.py", line 2264, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 30.60 GiB. GPU 

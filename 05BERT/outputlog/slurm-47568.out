@@ -1,0 +1,155 @@
+Matplotlib created a temporary cache directory at /data/dydtkddhkdwk/matplotlib-p9uwg4gx because the default path (/home/dydtkddhkdwk/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+BERT
+MAX_LEN :  128 
+ BATCH_SIZE :  32 
+ EPOCHS :  5 
+ LR :  0.001 
+ DATAPATH :  ./repos/OXIDE/purify_data.xlsx 
+ BERT :  allenai/scibert_scivocab_uncased THRESHOLD :  0.5 RANDOM_STATE :  42 TRAIN_VAL_LOG_PATH :  ./repos/OXIDE/TRAIN_VAL_LOG/BERT TRAIN_LOSS_AVG_IMAGE_PATH :  ./repos/OXIDE/TRAIN_LOSS_AVG_IMAGE/BERT VALIDATION_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT VALIDATION_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT VALIDATION_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/VALIDATION_METRIC_IMAGE_AVG/BERT TEST_METRIC_LOG_PATH :  ./repos/OXIDE/TEST_METRIC_LOG/BERT TEST_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/TEST_METRIC_IMAGE_NANOPARTICLE/BERT TEST_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT TEST_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/TEST_METRIC_IMAGE_AVG/BERT MODEL_WEIGHT_PATH :  ./repos/OXIDE/MODEL_WEIGHT/BERT SSHPATH :  ./repos/OXIDE
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 304, in hf_raise_for_status
+    response.raise_for_status()
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/allenai/scibert_scivocab_uncased/resolve/main/tokenizer_config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1722, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(url=url, proxies=proxies, timeout=etag_timeout, headers=headers)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1645, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 372, in _request_wrapper
+    response = _request_wrapper(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 396, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 315, in hf_raise_for_status
+    raise EntryNotFoundError(message, response) from e
+huggingface_hub.utils._errors.EntryNotFoundError: 404 Client Error. (Request ID: Root=1-665dad9e-662881393fe0e8dd1e3c3b75;a9028fa0-4287-4836-babd-54cc9a11a1ac)
+
+Entry Not Found for url: https://huggingface.co/allenai/scibert_scivocab_uncased/resolve/main/tokenizer_config.json.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/pathlib.py", line 1288, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dydtkddhkdwk/.cache/huggingface/hub/models--allenai--scibert_scivocab_uncased/.no_exist/24f92d32b1bfb0bcaf9ab193ff3ad01e87732fc1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/pathlib.py", line 1288, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dydtkddhkdwk/.cache/huggingface/hub/models--allenai--scibert_scivocab_uncased/.no_exist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./repos/OXIDE/train.py", line 464, in <module>
+    main(args)
+  File "./repos/OXIDE/train.py", line 124, in main
+    tokenizer = BertTokenizerFast.from_pretrained(BERT)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 2029, in from_pretrained
+    resolved_config_file = cached_file(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/utils/hub.py", line 399, in cached_file
+    resolved_file = hf_hub_download(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1221, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1282, in _hf_hub_download_to_cache_dir
+    (url_to_download, etag, commit_hash, expected_size, head_call_error) = _get_metadata_or_catch_error(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1729, in _get_metadata_or_catch_error
+    no_exist_file_path.parent.mkdir(parents=True, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/pathlib.py", line 1292, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/pathlib.py", line 1292, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/pathlib.py", line 1288, in mkdir
+    self._accessor.mkdir(self, mode)
+OSError: [Errno 28] No space left on device: '/home/dydtkddhkdwk/.cache/huggingface/hub/models--allenai--scibert_scivocab_uncased'
+Matplotlib created a temporary cache directory at /data/dydtkddhkdwk/matplotlib-_8h6wy9_ because the default path (/home/dydtkddhkdwk/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+BERT
+MAX_LEN :  128 
+ BATCH_SIZE :  32 
+ EPOCHS :  5 
+ LR :  0.001 
+ DATAPATH :  ./repos/OXIDE/purify_data.xlsx 
+ BERT :  allenai/scibert_scivocab_cased THRESHOLD :  0.5 RANDOM_STATE :  42 TRAIN_VAL_LOG_PATH :  ./repos/OXIDE/TRAIN_VAL_LOG/BERT TRAIN_LOSS_AVG_IMAGE_PATH :  ./repos/OXIDE/TRAIN_LOSS_AVG_IMAGE/BERT VALIDATION_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT VALIDATION_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT VALIDATION_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/VALIDATION_METRIC_IMAGE_AVG/BERT TEST_METRIC_LOG_PATH :  ./repos/OXIDE/TEST_METRIC_LOG/BERT TEST_METRIC_IMAGE_NANOPARTICLE_PATH :  ./repos/OXIDE/TEST_METRIC_IMAGE_NANOPARTICLE/BERT TEST_METRIC_IMAGE_MAIN_SUBJECT_PATH :  ./repos/OXIDE/TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT TEST_METRIC_IMAGE_AVG_PATH :  ./repos/OXIDE/TEST_METRIC_IMAGE_AVG/BERT MODEL_WEIGHT_PATH :  ./repos/OXIDE/MODEL_WEIGHT/BERT SSHPATH :  ./repos/OXIDE
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 304, in hf_raise_for_status
+    response.raise_for_status()
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/allenai/scibert_scivocab_cased/resolve/main/tokenizer_config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1722, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(url=url, proxies=proxies, timeout=etag_timeout, headers=headers)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1645, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 372, in _request_wrapper
+    response = _request_wrapper(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 396, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_errors.py", line 315, in hf_raise_for_status
+    raise EntryNotFoundError(message, response) from e
+huggingface_hub.utils._errors.EntryNotFoundError: 404 Client Error. (Request ID: Root=1-665dada6-01540fb60648a64d32af85f2;d8e04dbf-2c4e-46e0-b5c6-43638c38d9a8)
+
+Entry Not Found for url: https://huggingface.co/allenai/scibert_scivocab_cased/resolve/main/tokenizer_config.json.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/pathlib.py", line 1288, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dydtkddhkdwk/.cache/huggingface/hub/models--allenai--scibert_scivocab_cased/.no_exist/ddf0be025f8e432a1870e34811997ba6725bf04a'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/pathlib.py", line 1288, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dydtkddhkdwk/.cache/huggingface/hub/models--allenai--scibert_scivocab_cased/.no_exist'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./repos/OXIDE/train.py", line 464, in <module>
+    main(args)
+  File "./repos/OXIDE/train.py", line 124, in main
+    tokenizer = BertTokenizerFast.from_pretrained(BERT)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 2029, in from_pretrained
+    resolved_config_file = cached_file(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/transformers/utils/hub.py", line 399, in cached_file
+    resolved_file = hf_hub_download(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1221, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1282, in _hf_hub_download_to_cache_dir
+    (url_to_download, etag, commit_hash, expected_size, head_call_error) = _get_metadata_or_catch_error(
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1729, in _get_metadata_or_catch_error
+    no_exist_file_path.parent.mkdir(parents=True, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/pathlib.py", line 1292, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/pathlib.py", line 1292, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "/data/dydtkddhkdwk/anaconda3/envs/BERTRANKING/lib/python3.8/pathlib.py", line 1288, in mkdir
+    self._accessor.mkdir(self, mode)
+OSError: [Errno 28] No space left on device: '/home/dydtkddhkdwk/.cache/huggingface/hub/models--allenai--scibert_scivocab_cased'
+/data/dydtkddhkdwk
+python ./repos/OXIDE/train.py --train_val_log_path /TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /MODEL_WEIGHT/BERT --threshold 0.5 --epochs 5 --bert allenai/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE
+Command failed: python ./repos/OXIDE/train.py --train_val_log_path /TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /MODEL_WEIGHT/BERT --threshold 0.5 --epochs 5 --bert allenai/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE
+python ./repos/OXIDE/train.py --train_val_log_path /TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /MODEL_WEIGHT/BERT --threshold 0.5 --epochs 5 --bert allenai/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE
+Command failed: python ./repos/OXIDE/train.py --train_val_log_path /TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /MODEL_WEIGHT/BERT --threshold 0.5 --epochs 5 --bert allenai/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE
+failed command: ['python ./repos/OXIDE/train.py --train_val_log_path /TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /MODEL_WEIGHT/BERT --threshold 0.5 --epochs 5 --bert allenai/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE', 'python ./repos/OXIDE/train.py --train_val_log_path /TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /MODEL_WEIGHT/BERT --threshold 0.5 --epochs 5 --bert allenai/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE']
+failed command: ['python ./repos/OXIDE/train.py --train_val_log_path /TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /MODEL_WEIGHT/BERT --threshold 0.5 --epochs 5 --bert allenai/scibert_scivocab_uncased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE', 'python ./repos/OXIDE/train.py --train_val_log_path /TRAIN_VAL_LOG/BERT --train_loss_avg_image_path /TRAIN_LOSS_AVG_IMAGE/BERT --validation_metric_image_nanoparticle_path /VALIDATION_METRIC_IMAGE_NANOPARTICLE/BERT --validation_metric_image_main_subject_path /VALIDATION_METRIC_IMAGE_MAIN_SUBJECT/BERT --validation_metric_image_avg_path /VALIDATION_METRIC_IMAGE_AVG/BERT --test_metric_log_path /TEST_METRIC_LOG/BERT --test_metric_image_nanoparticle_path /TEST_METRIC_IMAGE_NANOPARTICLE/BERT --test_metric_image_main_subject_path /TEST_METRIC_IMAGE_MAIN_SUBJECT/BERT --test_metric_image_avg_path /TEST_METRIC_IMAGE_AVG/BERT --model_weight_path /MODEL_WEIGHT/BERT --threshold 0.5 --epochs 5 --bert allenai/scibert_scivocab_cased --data_path ./repos/OXIDE/purify_data.xlsx --ssh_path ./repos/OXIDE']

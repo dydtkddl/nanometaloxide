@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "repos/OXIDE/06subprocess_BERT.py", line 56, in <module>
+    c = c+" --random_state %"%RANDOM_STATE
+ValueError: incomplete format
